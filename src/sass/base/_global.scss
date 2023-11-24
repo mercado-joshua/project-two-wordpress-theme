@@ -1,0 +1,65 @@
+// typography
+// @font-face {
+//     font-family: 'paperNotes';
+//     src: url('../../fonts/paper-notes/Papernotes.woff2') format('woff2'),
+//          url('../../fonts/paper-notes/Papernotes.otf') format('opentype'),
+//          url('../../fonts/paper-notes/Papernotes.ttf') format('truetype');
+// }
+
+// global styles
+
+*:where( ::before, ::after ) {
+    box-sizing: border-box;
+}
+
+ul, ol, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+:where( ul, ol ) > li {
+    list-style: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+// body {
+//     background: url('../../images/background.png');
+// }
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+[class*="-btn"] {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    appearance: none;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    border-style: none;
+    height: auto;
+}
+
+.max-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.link {
+    background: none;
+    color: #000;
+}
